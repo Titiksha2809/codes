@@ -1,0 +1,12 @@
+ Problem 5: Swap two numbers without using a temporary variable
+
+a = 10
+b = 50
+
+a = a + b
+b = a - b
+a = a - b
+
+print("After Swapping: a =", a, " b =", b)
+
+
