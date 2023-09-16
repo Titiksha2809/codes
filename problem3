@@ -1,0 +1,33 @@
+Problem 3:  Biggest and smallest number in an array
+
+def findMinMax(arr, n):
+
+	mini = arr[0]
+	max = arr[0]
+
+	for i in range(0, n):
+		if (arr[i] < mini):
+			mini = arr[i]
+
+		elif (arr[i] > maxi):
+			max = arr[i]
+
+	return [mini, max]
+
+	arr = [1, 2, 3, 4, 5]
+	N = len(arr)
+
+  arr1 = {5, 3, 7, 4, 2}
+  N1 = len(arr1)
+
+
+	ans = findMinMax(arr, N)
+	print(f"Maximum is: {ans[1]}")
+	print(f"Minimum is: {ans[0]}")
+
+  ans1 = findMinMax(arr1, N1)
+	print(f"Maximum is: {ans[1]}")
+	print(f"Minimum is: {ans[0]}")
+
+
+	
